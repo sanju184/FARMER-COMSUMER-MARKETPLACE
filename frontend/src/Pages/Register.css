@@ -1,0 +1,73 @@
+
+.register-container {
+  width: 100vw;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #4CAF50, #2E7D32); 
+  background-image: url('https://img.freepik.com/premium-photo/spring-nature-concept_52701-112.jpg?w=2000'); 
+  background-size: cover;
+  background-position: center;
+}
+
+
+.register-form {
+  width: 350px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+
+  
+.register-form h2 {
+  color: #2E7D32;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+.register-form input, select {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #A5D6A7;
+  border-radius: 5px;
+  background: #E8F5E9;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-form input:focus, select:focus {
+  border-color: #388E3C;
+  background: #C8E6C9;
+}
+
+
+ .register-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #388E3C; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #2E7D32;
+}
+
+
+.error-msg{
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

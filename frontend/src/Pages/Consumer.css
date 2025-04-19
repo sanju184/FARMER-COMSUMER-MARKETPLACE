@@ -1,0 +1,195 @@
+.consumer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.consumeritem-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+
+  padding-top: 150px;
+}
+
+
+.consumer-product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.consumer-product-card p {
+  flex-grow: 1;  
+  margin-bottom: 10px; 
+}
+
+.add-to-cart-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+  margin-top: auto; 
+  position: relative; 
+  right: auto;
+  bottom: auto;
+}
+
+
+
+.consumer-product-card:hover {
+  transform: scale(1.05);
+}
+
+.consumer-product-card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.consumer-product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.consumer-product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+
+
+.add-to-cart-btn:hover {
+  background: #218838;
+}
+
+
+.navtype-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  position: fixed;  
+  top: 100px;       
+  left: 0;          
+  width: 100vw;     
+  z-index: 1000;   
+ 
+}
+
+.btn-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 60px;
+  height: 60px;
+  border: none;
+  text-align: center;
+  position: relative;
+
+  overflow: visible;
+}
+
+.btn-1 img {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  object-fit: cover;
+}
+
+.btn-1 span {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-1:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.btn-1:active {
+  transform: scale(0.95);
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  
+}
+
+@media (max-width: 768px) {
+  .consumeritem-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .consumer-product-card img {
+    height: 150px;
+  }
+
+  .cart-header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .cart-container {
+    padding: 15px;
+  }
+}

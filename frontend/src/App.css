@@ -1,0 +1,17 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+ }
+
+ body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  height: 100%;
+  box-sizing: border-box;
+
+}
